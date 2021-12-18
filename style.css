@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #000;
+}
+.calc {
+    width: 400px;
+    margin: 30px auto;
+}
+.show {
+    background-color: #7A5980;
+    width: 300px;
+    height: 70px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    border: 1px solid #fff;
+}
+.display {
+    font-weight: 300;
+    width: 300px;
+    height: 70px;
+    text-align: right;
+    font-size: 40px;
+    line-height: 50px;
+    padding-top: 10px;
+    padding-right: 10px;
+    background-color: #a5a5a5;
+    border-radius: 50px;
+    border: 1px solid #fff;
+}
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: repeat(5, 70px);
+    gap: 5px;
+}
+.key {
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 70px;
+    margin: 10px;
+    background-color: #333;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+.start-end {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 145px;
+}
+.key:active {
+    background-color: #33333390;
+}
+.bg {
+    background-color: #a5a5a5;
+}
+.bg:active {
+    background-color: #a5a5a590;
+}
+.bg-op {
+    background-color: #7A5980;
+}
+.bg-op:active { 
+    background-color: #7A5980cc;
+}
